@@ -1,27 +1,27 @@
 export const projects = [
   {
-    title: "React Reserve",
+    title: "Wordle game",
     subtitle: "MERN Stack",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Ett wordle inspirerat spel",
     image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/simonlj8/wordle_game",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Pong",
+    subtitle: "Java",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Ett litet pong spel skrivet i java",
     image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/simonlj8/Game",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Parkering app",
+    subtitle: "Java, Springboot",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Parkerings app",
     image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/simonlj8/parkering",
   },
   {
     title: "Epic Todo App",
