@@ -16,7 +16,8 @@ exports.handler = async (event, context) => {
 
     console.log("creating")
     const transporter = nodemailer.createTransport({
-      service: 'smtp.office365.com',
+     // service: 'smtp.office365.com',
+      host: 'smtp.office365.com',
       port: 587,
       secure: false,
       auth: {
@@ -30,14 +31,16 @@ exports.handler = async (event, context) => {
       to: 'simonlj8@gmail.com',
       subject: `Nytt meddelande från ${name}`,
       text: message,
+      replyTo: email,
     };
 
-    await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully');
+    console.log('Sending email...');
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info);
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Email sent successfully' }),
+      body: JSON.stringify({ message: 'Email sent successfully', info }),
     };
   } catch (error) {
     console.error('Error sending email:', error);
@@ -48,6 +51,23 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
+//     await transporter.sendMail(mailOptions);
+//     console.log('Email sent successfully');
+
+//     return {
+//       statusCode: 200,
+//       body: JSON.stringify({ message: 'Email sent successfully' }),
+//     };
+//   } catch (error) {
+//     console.error('Error sending email:', error);
+
+//     return {
+//       statusCode: 500,
+//       body: JSON.stringify({ error: error.message }),
+//     };
+//   }
+// };
 
 
 
