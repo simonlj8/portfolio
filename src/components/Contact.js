@@ -15,7 +15,7 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/.netlify/functions/send-email", {
+    fetch("/netlify/functions/Send-email.js", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
