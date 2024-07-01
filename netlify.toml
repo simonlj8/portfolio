@@ -1,6 +1,6 @@
 [build]
   command = "CI= npm run build"
-  functions = "netlify"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"
