@@ -16,8 +16,8 @@ exports.handler = async (event, context) => {
       port: 587,
       secure: false, // Använd true för port 465, false för andra portar
       auth: {
-        user: process.env.OUTLOOK_USER, // Din Outlook e-postadress
-        pass: process.env.OUTLOOK_PASSWORD, // Ditt app-specifika lösenord
+        user: process.env.EMAIL_USER, // Din Outlook e-postadress
+        pass: process.env.EMAIL_PASSWORD, // Ditt app-specifika lösenord
       },
     });
 
