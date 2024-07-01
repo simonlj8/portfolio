@@ -13,15 +13,33 @@ export default function Contact() {
       .join("&");
   }
 
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   fetch('/.netlify/functions/send-email', {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", name, email, message }),
+  //   })
+  //     .then(() => alert("Message sent!"))
+  //     .catch((error) => alert(error));
+  // }
+
   function handleSubmit(e) {
     e.preventDefault();
     fetch('/.netlify/functions/send-email', {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message }), // Ensure the body is correctly formatted
     })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.error) {
+          alert(`Error: ${data.error}`);
+        } else {
+          alert('Message sent!');
+        }
+      })
+      .catch((error) => alert(`Error: ${error.message}`));
   }
 
   return (
