@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
     });
 
     const mailOptions = {
-      from: email,
+      from: process.env.EMAIL_USER,
       to: 'simonlj8@gmail.com',
       subject: `Nytt meddelande från ${name}`,
       text: message,
