@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     });
 
     const mailOptions = {
-      from: process.env.OUTLOOK_USER, // Din e-postadress
+      from: process.env.EMAIL_USER, // Din e-postadress
       to: 'simonlj8@gmail.com', // Din e-postadress där du vill ta emot meddelandet
       subject: `New message from ${name}`,
       text: message,
