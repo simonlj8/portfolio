@@ -5,7 +5,7 @@ export const projects = [
     description:
       "A wordle inspired game",
     image: "./bild1.png",
-    link: "https://github.com/simonlj8/wordle_game",
+    link: "https://esc-room-omega.vercel.app/ ",
   },
   {
     title: "Pong",
