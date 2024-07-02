@@ -12,9 +12,7 @@ export default function About() {
           <br className="hidden lg:inline-block" />
         </h1>
         <p className="mb-8 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-          laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-          Laborum, voluptas natus?
+        System developer who is ready for new assignments. Open for both remote and on-site. My location is Umeå
         </p>
         <div className="flex justify-center">
           <a

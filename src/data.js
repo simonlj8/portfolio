@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "Java, Springboot",
     description:
       "Backend parking app",
-    image: "./project-3.gif",
+    image: "./bild3.png",
     link: "https://github.com/simonlj8/parkering",
   },
   {
