@@ -3,23 +3,23 @@ export const projects = [
     title: "Wordle game",
     subtitle: "MERN Stack",
     description:
-      "Ett wordle inspirerat spel",
-    image: "./project-1.gif",
+      "A wordle inspired game",
+    image: "./bild1.png",
     link: "https://github.com/simonlj8/wordle_game",
   },
   {
     title: "Pong",
     subtitle: "Java",
     description:
-      "Ett litet pong spel skrivet i java",
-    image: "./project-2.gif",
+      "A pong game written in java",
+    image: "./bild2.png",
     link: "https://github.com/simonlj8/Game",
   },
   {
-    title: "Parkering app",
+    title: "Parking app",
     subtitle: "Java, Springboot",
     description:
-      "Parkerings app",
+      "Backend parking app",
     image: "./project-3.gif",
     link: "https://github.com/simonlj8/parkering",
   },
@@ -27,7 +27,7 @@ export const projects = [
     title: "Hacker Escape Room",
     subtitle: "JavaScript, HTLM, CSS",
     description:
-      "Bokningssida för hacker escape room",
+      "Escape room booking page",
     image: "./bild4.png",
     link: "https://esc-room-omega.vercel.app",
   },
